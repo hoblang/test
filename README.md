@@ -12,5 +12,5 @@ test.case("arithmetic should be good", fun () {
         return false;
     }
     return true;
-})
+});
 ```
