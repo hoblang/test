@@ -1,0 +1,13 @@
+import io;
+
+public fun case(name: string, fn: fun () -> bool) {
+    io.out.putString("testing case `");
+    io.out.putString(name);
+    io.out.putString("`... ");
+    if fn() {
+        io.out.putString("ok");
+    } else {
+        io.out.putString("fail");
+    }
+    io.out.putString("!\n");
+}

@@ -1,0 +1,15 @@
+import os;
+
+import "lib.hob" as test;
+
+global fun main() -> i32 {
+    return os.mainWithoutArgs(fun () {
+        test.case("cool case", fun () {
+            return true;
+        });
+        test.case("not cool case", fun () {
+            return false;
+        });
+        return 0;
+    });
+}
